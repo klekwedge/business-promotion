@@ -49,25 +49,9 @@ body._lock {
 
 ._title {
   font-weight: 700;
-  font-size: 40px;
-  letter-spacing: 4px;
-  line-height: 150%;
+  font-size: 32px;
+  line-height: 48px;
   text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  &::after {
-    content: "";
-    opacity: 0.5;
-    width: 90px;
-    height: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    background-color: black;
-    margin: 0px 0px -5px -40px;
-  }
 }
 
 ._subtitle {
@@ -275,6 +259,10 @@ body._lock {
 /*-----Home----------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
+.page__home {
+  margin-bottom: 150px;
+}
+
 .home__container {
   display: flex;
   gap: 0px 50px;
@@ -325,4 +313,74 @@ body._lock {
   text-decoration-line: underline;
   color: #02897a;
   background-color: transparent;
+}
+
+/*-------------------------------------------------------------*/
+/*-----Products------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__products {
+  margin-bottom: 150px;
+}
+
+.products {
+  &__title {
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    display: block;
+    top: 0;
+    max-width: auto;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 20px 50px;
+    margin-bottom: 35px;
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // min-width: 240px;
+    max-width: 240px;
+    .product__image {
+      margin-bottom: 30px;
+    }
+    .product__title {
+      margin: 0px 0px 15px 0px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+    }
+    .product__text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px 35px;
+    background: #02897a;
+    border-radius: 4px;
+    color: inherit;
+    display: block;
+    margin: 0 auto;
+  }
 }
