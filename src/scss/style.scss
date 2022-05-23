@@ -1,6 +1,6 @@
 @import "./modules/_nullstyle";
 @import "./modules/_anim-scroll";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');/*-------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); /*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
 
@@ -24,7 +24,7 @@ textarea::-webkit-input-placeholder {
 body {
   background-color: #1f2e35;
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body._lock {
@@ -93,14 +93,12 @@ body._lock {
 /*-------------------------------------------------------------*/
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 .header__menu {
-  padding: 20px 10px;
+  padding: 20px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px 20px;
@@ -271,4 +269,60 @@ body._lock {
   .menu__link {
     font-size: 35px;
   }
+}
+
+/*-------------------------------------------------------------*/
+/*-----Home----------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.home__container {
+  display: flex;
+  gap: 0px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__body {
+  max-width: 450px;
+}
+
+.home__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+.home__paragraph {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+.home__buttons {
+  display: flex;
+  gap: 0px 30px;
+  align-items: center;
+}
+.home__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+  padding: 15px 40px;
+  background: #02897a;
+  border-radius: 4px;
+}
+
+.home__button-video {
+  display: flex;
+  gap: 0px 10px;
+  background-color: transparent;
+}
+
+.home__button-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #02897a;
+  background-color: transparent;
 }
