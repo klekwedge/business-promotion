@@ -446,10 +446,79 @@ body._lock {
   width: 100%;
 }
 
+/*-------------------------------------------------------------*/
+/*-----Supports------------------------------------------------*/
+/*-------------------------------------------------------------*/
 
+.page__supports {
+  margin-bottom: 150px;
+}
+
+.supports {
+  &__body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 80px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 490px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 30px 0px;
+  }
+
+  &__support {
+    display: flex;
+    align-items: center;
+    gap: 30px 30px;
+
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+
+.supports__wrapper {
+  flex: 0 1 55%;
+  max-width: 540px;
+  @media (max-width: 769px) {
+    flex: 1 1 100%;
+  }
+}
+
+.supports__image {
+  width: 100%;
+}
 
 /*-------------------------------------------------------------*/
-/*-----Manages-------------------------------------------------*/
+/*-----Collabs-------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
 .page__сollabs {
