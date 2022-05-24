@@ -36,7 +36,7 @@ body._lock {
 /*-------------------------------------------------------------*/
 
 ._container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0px auto;
 }
 
@@ -579,7 +579,7 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
-/*-----Reviews-------------------------------------------------*/
+/*-----Strategies----------------------------------------------*/
 /*-------------------------------------------------------------*/
 
 .page__strategies {
@@ -617,7 +617,7 @@ body._lock {
     border-radius: 8px;
     color: #22343d;
 
-    .strategy__image{
+    .strategy__image {
       border-radius: 8px 8px 0px 0px;
     }
 
@@ -629,7 +629,7 @@ body._lock {
       font-size: 16px;
       line-height: 28px;
       color: #22343d;
-      & span{
+      & span {
         font-weight: 700;
       }
     }
@@ -642,7 +642,7 @@ body._lock {
     }
 
     .strategy__title-special {
-      color: #02897A;
+      color: #02897a;
     }
 
     .review__paragraph {
@@ -866,4 +866,56 @@ body._lock {
       color: #252b42;
     }
   }
+}
+
+/*-------------------------------------------------------------*/
+/*-----Call----------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.page__call {
+  margin-bottom: 150px;
+}
+.call {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px 90px;
+    padding: 20px 35px 0px 50px;
+    max-width: 968px;
+    margin: 0 auto;
+    background-color: #02897a;
+    border-radius: 32px;
+  }
+
+  &__content {
+    padding: 50px 0px 50px 0px;
+  }
+
+  &__title {
+    max-width: 500px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+  &__button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #02897a;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px 35px;
+  }
+}
+
+.call__wrapper {
+  // flex: 0 1 55%;
+  max-width: 350px;
+  @media (max-width: 769px) {
+    flex: 1 1 100%;
+  }
+}
+
+.call__image {
+  width: 100%;
 }
