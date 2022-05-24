@@ -579,6 +579,83 @@ body._lock {
 }
 
 /*-------------------------------------------------------------*/
+/*-----Reviews-------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__strategies {
+  margin-bottom: 150px;
+}
+
+.strategies {
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 65px;
+  }
+
+  &__strategy {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 8px;
+    color: #22343d;
+
+    .strategy__image{
+      border-radius: 8px 8px 0px 0px;
+    }
+
+    div {
+      padding: 25px 25px 40px 25px;
+    }
+
+    .strategy__date {
+      font-size: 16px;
+      line-height: 28px;
+      color: #22343d;
+      & span{
+        font-weight: 700;
+      }
+    }
+
+    .strategy__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 40px;
+      color: #22343d;
+    }
+
+    .strategy__title-special {
+      color: #02897A;
+    }
+
+    .review__paragraph {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: #737373;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+/*-------------------------------------------------------------*/
 /*-----Prices--------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
