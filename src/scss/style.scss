@@ -577,3 +577,140 @@ body._lock {
 .сollabs__image {
   width: 100%;
 }
+
+/*-------------------------------------------------------------*/
+/*-----Prices--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__prices {
+  margin-bottom: 150px;
+}
+
+.prices {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 70px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: #22343d;
+    padding: 25px 75px 35px 75px;
+
+    .price__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+    .price__subtitle {
+      font-size: 16px;
+      line-height: 40px;
+      margin-bottom: 15px;
+    }
+
+    .price__cost {
+      display: flex;
+      gap: 10px 10px;
+      align-items: center;
+      .cost__value {
+        font-weight: 700;
+        font-size: 76px;
+        line-height: 100px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #02897a;
+      }
+
+      .cost__options {
+        display: flex;
+        flex-direction: column;
+        gap: 5px 5px;
+      }
+
+      .cost__currency {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+        color: #02897a;
+      }
+
+      .cost__period {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1px;
+        color: #afafaf;
+      }
+    }
+
+    .price__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px 15px;
+      margin-bottom: 40px;
+    }
+    .price__item {
+      text-align: center;
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+    }
+    .price__button {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 11px 19px;
+      background: #02897a;
+      border-radius: 8px;
+      color: white;
+    }
+  }
+
+  .price-special {
+    background: #02897a;
+    color: white;
+
+    .price__cost {
+      .cost__value {
+        color: white;
+      }
+
+      .cost__currency {
+        color: white;
+      }
+
+      .cost__period {
+        color: white;
+      }
+    }
+    .price__button {
+      background: white;
+      color: #02897a;
+    }
+  }
+}
