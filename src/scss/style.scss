@@ -919,3 +919,81 @@ body._lock {
 .call__image {
   width: 100%;
 }
+
+/*-------------------------------------------------------------*/
+/*-----Footer--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.footer {
+  &__container {
+    padding: 40px 0px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+  }
+
+  &__social {
+    display: flex;
+    gap: 15px 15px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    .footer__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px 15px;
+      margin-bottom: 25px;
+    }
+
+    & h2 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 28px;
+    }
+  }
+
+  &__resource,
+  &__stuff {
+    display: flex;
+    flex-direction: column;
+    // gap: 8px 5px;
+  }
+  &__resource li,
+  &__stuff li {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    max-width: 325px;
+    max-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 15px;
+    color: #ffffff;
+    background: #02897a;
+    border-radius: 4px;
+  }
+}
