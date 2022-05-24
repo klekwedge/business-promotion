@@ -714,3 +714,79 @@ body._lock {
     }
   }
 }
+
+/*-------------------------------------------------------------*/
+/*-----Reviews-------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__reviews {
+  margin-bottom: 150px;
+}
+
+.reviews {
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 530px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 65px;
+  }
+
+  &__review {
+    max-width: 328px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    color: #22343d;
+    padding: 25px;
+
+    .review__rating {
+      max-width: 106px;
+    }
+
+    .review__paragraph {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: #737373;
+      margin-bottom: 16px;
+    }
+
+    .person {
+      display: flex;
+      gap: 10px 15px;
+    }
+
+    .person__name {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #02897a;
+      margin-bottom: 0px;
+    }
+
+    .person__position {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #252b42;
+    }
+  }
+}
