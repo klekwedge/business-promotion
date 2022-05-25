@@ -33,29 +33,7 @@
 
 <body>
   <div class="_wrapper">
-    <header class="header">
-      <div class="header__container _container">
-        <div class="header__menu menu">
-          <div class="menu__logo"> <img src="assets/img/logo.png" alt='logo' />
-            <h1>Product</h1>
-          </div>
-          <nav class="menu__body">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="#products">Product</a></li>
-              <li class="menu__item"><a class="menu__link" href="#team">Customers</a></li>
-              <li class="menu__item"><a class="menu__link" href="#skills">Pricing</a></li>
-              <li class="menu__item"><a class="menu__link" href="#portfolio">Resources</a></li>
-            </ul>
-            <button class="menu__button">Sign In</button>
-            <button class="menu__button menu__button_fill">Sign Up</button>
-            <button class="menu__theme"><img src="./assets//svg/theme-icon.svg"></button>
-          </nav>
-          <div class="menu__icon">
-            <span></span>
-          </div>
-        </div>
-      </div>
-    </header>
+    @@include('html/header.html', {}) 
 
     <main class="page">
       <section class="page__home home">
@@ -275,61 +253,7 @@
         <div class="prices__container _container">
           <h2 id="prices" class="prices__title _title">Price Table</h2>
           <h3 class="prices__subtitle">We offer competitive price</h3>
-          <ul class="prices__list">
-            <li class="prices__price price">
-              <h4 class="price__title">Free</h4>
-              <h5 class="price__subtitle">Brief price description</h5>
-              <div class="price__cost cost">
-                <span class="cost__value">0</span>
-                <div class="cost__options">
-                  <span class="cost__currency">$</span>
-                  <span class="cost__period">Per / month</span>
-                </div>
-              </div>
-              <ul class="price__list">
-                <li class="price__item">Only 2 Operators</li>
-                <li class="price__item">Notifications</li>
-                <li class="price__item">Landing Pages</li>
-              </ul>
-              <button class="price__button">Order Now</button>
-            </li>
-
-            <li class="prices__price price price-special">
-              <h4 class="price__title">Standard</h4>
-              <h5 class="price__subtitle">Brief price description</h5>
-              <div class="price__cost cost">
-                <span class="cost__value">5</span>
-                <div class="cost__options">
-                  <span class="cost__currency">$</span>
-                  <span class="cost__period">Per / month</span>
-                </div>
-              </div>
-              <ul class="price__list">
-                <li class="price__item">5+ Operators</li>
-                <li class="price__item">Notifications</li>
-                <li class="price__item">Landing Pages</li>
-              </ul>
-              <button class="price__button">Order Now</button>
-            </li>
-
-            <li class="prices__price price">
-              <h4 class="price__title">Premium</h4>
-              <h5 class="price__subtitle">Brief price description</h5>
-              <div class="price__cost cost">
-                <span class="cost__value">10</span>
-                <div class="cost__options">
-                  <span class="cost__currency">$</span>
-                  <span class="cost__period">Per / month</span>
-                </div>
-              </div>
-              <ul class="price__list">
-                <li class="price__item">10+ Operators</li>
-                <li class="price__item">Notifications</li>
-                <li class="price__item">Landing Pages</li>
-              </ul>
-              <button class="price__button">Order Now</button>
-            </li>
-          </ul>
+          @@include('html/prices.html', {}) 
         </div>
       </section>
 
@@ -384,61 +308,10 @@
         </div>
       </section>
 
-      <section class="page__call call">
-        <div class="call__container _container">
-          <div class="call__body">
-            <div class="call__content">
-              <h2 id="call" class="call__title _title">Join 100 Companies who boost their business with Product</h2>
-              <button class="call__button">Get This</button>
-            </div>
-            <div class="call__wrapper">
-              <img class="call__image" src="./assets/img/call.png" alt="Image call" />
-            </div>
-          </div>
-        </div>
-      </section>
+      @@include('html/call.html', {}) 
     </main>
 
-    <footer class="footer">
-      <div class="footer__container _container">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <div class="footer__logo"> <img src="assets/img/logo.png" alt='logo' />
-              <h2>Product</h2>
-            </div>
-            <ul class="footer__social">
-              <li><img src="assets/img/instagram.png"></li>
-              <li><img src="assets/img/facebook.png"></li>
-              <li><img src="assets/img/twitter.png"></li>
-            </ul>
-          </li>
-          <li class="footer__item">
-            <h3 class="footer__subtitle">Resource</h3>
-            <ul class="footer__resource">
-              <li>About Us</li>
-              <li>Blog</li>
-              <li>Contact</li>
-              <li>FAQ</li>
-            </ul>
-          </li>
-          <li class="footer__item">
-            <h3 class="footer__subtitle">Legal Stuff</h3>
-            <ul class="footer__stuff">
-              <li>Disclaimer</li>
-              <li>Financing</li>
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-            </ul>
-          </li>
-          <li class="footer__item">
-            <h3 class="footer__subtitle">Knowing you're always on the best energy deal.
-            </h3>
-            <input class="footer__input">
-            <button class="footer__button">Sign up Now</button>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    @@include('html/footer.html', {}) 
   </div>
   <script src="js/app.min.js">  </script>
 </body>
