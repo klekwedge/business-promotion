@@ -1,0 +1,36 @@
+/*-------------------------------------------------------------*/
+/*-----Enterprise----------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__enterprise {
+  margin-bottom: 150px;
+  background-color: #22343D;
+  padding: 50px 0px;
+}
+
+.enterprise {
+  &__subtitle {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__button {
+    padding: 11px 18px;
+    background: #02897a;
+    color: white;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 auto;
+    display: block;
+  }
+}
