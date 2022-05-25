@@ -3,7 +3,7 @@
 /*-------------------------------------------------------------*/
 
 .page__clients {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .clients {
@@ -77,6 +77,82 @@
       letter-spacing: 0.2px;
     }
   }
+}
+
+/*-------------------------------------------------------------*/
+/*-----works------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__works {
+  margin-bottom: 115px;
+}
+
+.works {
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px 0px;
+    margin-bottom: 75px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 90px 90px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__work {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    .work__subtitle {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 15px;
+    }
+
+    .work__title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 15px;
+    }
+
+    .work__paragraph {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  &__button {
+      display: block;
+      margin: 0 auto;
+    padding: 11px 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    background: #02897a;
+    color: white;
+    border-radius: 8px;
+  }
+}
+
+.works__wrapper {
+  max-width: 500px;
+}
+
+.works__image {
+  width: 100%;
 }
 
 /*-------------------------------------------------------------*/
