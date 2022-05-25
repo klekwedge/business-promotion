@@ -24,3 +24,57 @@
     }
   }
 }
+
+/*-------------------------------------------------------------*/
+/*-----choice--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.page__choices {
+  margin-bottom: 150px;
+  background-color: #22343d;
+}
+
+.choices__container {
+  padding: 25px 0px 70px 0px;
+}
+
+.choices {
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px 70px;
+  }
+
+  &__choice {
+    max-width: 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 35px 30px 35px 30px;
+
+    .choice__image {
+      margin-bottom: 30px;
+    }
+
+    .choice__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 15px;
+    }
+
+    .choice__paragraph {
+      font-size: 16px;
+      line-height: 27px;
+      letter-spacing: 0.2px;
+    }
+  }
+}
